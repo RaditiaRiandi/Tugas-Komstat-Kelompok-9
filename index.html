@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rekomendasi Mata Kuliah</title>
+</head>
+<body>
+    <h1>REKOMENDASI PEMILIHAN MATA KULIAH MAHASISWA</h1>
+    <form method="post" action="/">
+        <label for="mahasiswa">Pilih Mahasiswa:</label>
+        <select id="mahasiswa" name="mahasiswa">
+            {% for mhs in unique_mahasiswa %}
+                <option value="{{ mhs }}">{{ mhs }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Cek Syarat Lulus</button>
+    </form>
+</body>
+</html>

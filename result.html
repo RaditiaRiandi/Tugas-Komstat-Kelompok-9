@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil Rekomendasi</title>
+</head>
+<body>
+    <h2>Rekomendasi dan Syarat Lulus untuk {{ nama_mahasiswa }}</h2>
+    <ul>
+        {% for item in hasil %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
